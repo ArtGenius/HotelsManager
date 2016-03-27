@@ -1,0 +1,31 @@
+.edit{
+	color: #FFCA0A;
+	float:left;
+	margin-right: 2em;
+}
+
+.remove{
+	color:red;
+	float:left;	
+	display: block;
+}
+
+.remove:hover{
+	color: #FF2F05;
+}
+
+.edit:hover{
+	color: #FFCA0A;
+}
+
+.btn-warning{
+	float: right;
+}
+
+table{
+	margin-top:1em; 
+}
+
+#gedit_form{
+	display: none;
+}
