@@ -36,6 +36,7 @@ require_once 'control/HotelsControllers.php';
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Список гостиниц<span class="sr-only">(current)</span></a></li>
         <li><a href="statistics.php">Статистика<span class="sr-only">(current)</span></a></li>
+        <li><a href="firms.php">Фирмы<span class="sr-only"></span></a></li>
         <!-- <li><a href="#">Заказы</a></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->

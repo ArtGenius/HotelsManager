@@ -1,734 +1,199 @@
 generate IN
-'Крым'
+'Hilton1'
 generate IN
 generate IN
 generate IN
 generate AND
-' name IN ('Крым')'
+' name IN ('Hilton1')'
 ''
 ''
 ''
-filter=  name IN ('Крым') AND 
-select = SELECT*FROM `hotel` WHERE  name IN ('Крым') AND 
-generate IN
-'Крым'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Крым')'
-''
-''
-''
-filter=  name IN ('Крым')
-select = SELECT*FROM `hotel` WHERE  name IN ('Крым')
-generate IN
-'Крым'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Крым')'
-''
-''
-''
-filter=  name IN ('Крым')
-select = SELECT*FROM `hotel` WHERE  name IN ('Крым')
-generate IN
-'Крым'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Крым')'
-''
-''
-''
-filter=  name IN ('Крым')
-select = SELECT*FROM `hotel` WHERE  name IN ('Крым')
-generate IN
-'Космос'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Космос')'
-''
-''
-''
-filter=  name IN ('Космос')
-select = SELECT*FROM `hotel` WHERE  name IN ('Космос')
-generate IN
-'Космос'
-'Hilton'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Космос','Hilton')'
-''
-''
-''
-filter=  name IN ('Космос','Hilton')
-select = SELECT*FROM `hotel` WHERE  name IN ('Космос','Hilton')
-generate IN
-'Космос'
-'Hilton'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Космос','Hilton')'
-''
-''
-''
-filter=  name IN ('Космос','Hilton')
-select = SELECT*FROM `hotel` WHERE  name IN ('Космос','Hilton')
-generate IN
-'Космос'
-'Hilton'
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-' name IN ('Космос','Hilton')'
-''
-''
-' rank IN ('4')'
-filter=  name IN ('Космос','Hilton') rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  name IN ('Космос','Hilton') rank IN ('4')
-generate IN
-'Космос'
-'Hilton'
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-' name IN ('Космос','Hilton')'
-''
-''
-' rank IN ('4')'
-filter=  name IN ('Космос','Hilton') rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  name IN ('Космос','Hilton') rank IN ('4')
-generate IN
-'Космос'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Космос')'
-''
-''
-''
-filter=  name IN ('Космос') AND 
-select = SELECT*FROM `hotel` WHERE  name IN ('Космос') AND 
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-'5'
-generate AND
-''
-''
-''
-' rank IN ('4','5')'
-filter=  AND  rank IN ('4','5')
-select = SELECT*FROM `hotel` WHERE  AND  rank IN ('4','5')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-'Брайтон1'
-generate IN
-generate IN
-generate IN
-generate AND
-' name IN ('Брайтон1')'
-''
-''
-''
-filter=  name IN ('Брайтон1')
-select = SELECT*FROM `hotel` WHERE  name IN ('Брайтон1')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-'4'
-'5'
-generate AND
-''
-''
-''
-' rank IN ('4','4','5')'
-filter=  rank IN ('4','4','5')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4','4','5')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-'5'
-generate AND
-''
-''
-''
-' rank IN ('4','5')'
-filter=  rank IN ('4','5')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4','5')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-'5'
-generate AND
-''
-''
-''
-' rank IN ('4','5')'
-filter=  rank IN ('4','5')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4','5')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
+filter=  name IN ('Hilton1')
+select = SELECT*FROM `hotel` WHERE  name IN ('Hilton1')
 update
-hotel=hui
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-update
-hotel=
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-update
-set=, `rank` = 1
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-update
-set=, `rank` = 1
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-update
-set=, `rank` = '1'
-UPDATE hotel SET , `rank` = '1' WHERE `id`=1
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-update
-set=`rank` = '1'
-UPDATE hotel SET `rank` = '1' WHERE `id`=1
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-update
-set=`rank` = '2'
-UPDATE hotel SET `rank` = '2' WHERE     	 rank IN ('4')    
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-update
-set=`rank` = '2'
-UPDATE hotel SET `rank` = '2' WHERE     	 rank IN ('4')    
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-'4'
-generate AND
-''
-''
-''
-' rank IN ('2','4')'
-filter=  rank IN ('2','4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2','4')
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-'4'
-'5'
-generate AND
-''
-''
-''
-' rank IN ('2','4','5')'
-filter=  rank IN ('2','4','5')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2','4','5')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-generate AND
-''
-''
-''
-' rank IN ('4')'
-filter=  rank IN ('4')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4')
-generate IN
-generate IN
-generate IN
-generate IN
-'4'
-'2'
-generate AND
-''
-''
-''
-' rank IN ('4','2')'
-filter=  rank IN ('4','2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('4','2')
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-delete
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-delete
-DELETE FROM `hotel` WHERE  rank IN (generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-update
-set=
-UPDATE hotel SET  WHERE     	<?php echo  rank IN ('2');?>
-    	
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-update
-set=
-UPDATE hotel SET  WHERE     	 rank IN ('2');
-    	
-generate IN
-generate IN
-generate IN
-generate IN
-'2'
-generate AND
-''
-''
-''
-' rank IN ('2')'
-filter=  rank IN ('2')
-select = SELECT*FROM `hotel` WHERE  rank IN ('2')
-delete
-DELETE FROM `hotel` WHERE     	 rank IN ('2');
-    	generate IN
-generate IN
-generate IN
-generate IN
-'5'
-generate AND
-''
-''
-''
-' rank IN ('5')'
-filter=  rank IN ('5')
-select = SELECT*FROM `hotel` WHERE  rank IN ('5')
-delete
-DELETE FROM `hotel` WHERE     	 rank IN ('5');
-    	
+set=`name` = 'Hilton'
+UPDATE hotel SET `name` = 'Hilton' WHERE     		 name IN ('Hilton1');
+    		
+get firm id
+get firm Hilton id 
+get firm Hilton id 
+get firm Hilton id 
+add hotel
+get firm Hilton id 
+get firm Hilton id 
+add hotel
+get firm Hilton id 
+add hotel
+get firm Hilton id 
+get firm Hilton id 
+add hotel
+get firm Hilton id 
+add hotel
+get firm Hilton id 
+add hotel
+add hotel
+get firm 2 name 
+get firm 2 name 
+get firm 2 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 3 name 
+get firm 5 name 
+get firm 5 name 
+get firm 5 name 
+get firm 4 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 
+get firm 2 name 
+get firm 5 name 
+get firm 8 name 
+get firm 8 name 
+get firm 6 name 
+get firm 6 name 
+get firm 5 name 
+get firm 1 name 
+get firm 1 name 

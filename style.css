@@ -50,3 +50,9 @@ table{
 .sort{
 	float: right;
 }
+
+tr td a{
+	cursor: pointer;
+	text-decoration: none;
+	color: #333;
+}

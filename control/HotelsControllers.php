@@ -11,7 +11,10 @@ class HotelController {
 		$this->log = fopen ( "log.txt", "a" );
 	}
 	// �������� ����� � ��
-	function addHotel() {
+	function addHotel($name, $address, $rank, $firm_id) {
+		fwrite ( $this->log, "add hotel\n" );
+		$success=$this->dbConnector->addHotel($name, $address, $rank, $firm_id);
+		return $success;
 	}
 	function query($query) {
 		return $this->dbConnector->query ( $query );
@@ -20,6 +23,15 @@ class HotelController {
 	function getHotelsList() {
 		return $this->dbConnector->selectAllFromTable ( $this->tableName );
 	}
+	function getFirmsList() {
+		return $this->dbConnector->selectAllFromTable ( "firm");
+	}
+	function addFirm($name, $address){
+		fwrite ( $this->log, "add hotel\n" );
+		$success=$this->dbConnector->addFirm($name, $address);
+		return $success;
+	}
+	
 	function select_where($where) {
 		return $this->dbConnector->select ( $this->tableName, $where );
 	}
@@ -53,6 +65,12 @@ class HotelController {
 	}
 	function sort($field, $rule){
 		return $this->dbConnector->query("SELECT * FROM hotel order by $field $rule");
+	}
+	function getIdByFirmName($name){
+		return $this->dbConnector->getIdByFirmName($name);
+	}
+	function getFirmNameById($id){
+		return $this->dbConnector->getFirmNameById($id);
 	}
 	private function generateInExpressionFromArray($array, $columnName) {
 		fwrite ( $this->log, "generate IN\n" );
