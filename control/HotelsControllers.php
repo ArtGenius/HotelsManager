@@ -39,6 +39,21 @@ class HotelController {
 		fwrite ( $this->log, "filter= $query\n" );
 		return $query;
 	}
+	function update($hotel, $address, $rank, $firm, $where) {
+		fwrite ( $this->log, "update\n" );
+		$set = $this->set ( $hotel, $address, $rank, $firm );
+		$this->dbConnector->update ( "hotel", $set, $where );
+	}
+	function delete($where) {
+		fwrite ( $this->log, "delete\n" );
+		$this->dbConnector->delete ( "hotel", $where );
+	}
+	function getStatistics(){
+		return $this->dbConnector->query("SELECT `rank`, COUNT(`name`) as `count-h` FROM hotel GROUP BY rank");
+	}
+	function sort($field, $rule){
+		return $this->dbConnector->query("SELECT * FROM hotel order by $field $rule");
+	}
 	private function generateInExpressionFromArray($array, $columnName) {
 		fwrite ( $this->log, "generate IN\n" );
 		if ($array == null)
@@ -71,31 +86,24 @@ class HotelController {
 		}
 		return $result;
 	}
-	function update($hotel, $address, $rank, $firm, $where) {
-		fwrite ( $this->log, "update\n" );
-		$set = $this->set ( $hotel, $address, $rank, $firm );
-		$this->dbConnector->update ( "hotel", $set, $where );
-	}
-	function delete($where){
-		fwrite ( $this->log, "delete\n" );
-		$this->dbConnector->delete ( "hotel", $where );
-	}
-	
 	private function set($hotel, $address, $rank, $firm) {
-		$result="";
+		$result = "";
 		if ($hotel != "") {
-			$result = "`hotel` = '$hotel'";
+			$result = "`name` = '$hotel'";
 		}
 		if ($address != "") {
-			if($hotel != "")$result .= ", ";
+			if ($hotel != "")
+				$result .= ", ";
 			$result .= "`address` = '$address'";
 		}
-		if ($rank != "") {
-			if($hotel != ""||$address != "")$result .= ", ";
+		if ($rank != ""&&$rank != "0") {
+			if ($hotel != "" || $address != "")
+				$result .= ", ";
 			$result .= "`rank` = '$rank'";
 		}
 		if ($firm != "") {
-			if($hotel != ""||$address != ""||$rank != "")$result .= ", ";
+			if ($hotel != "" || $address != "" || $rank != "")
+				$result .= ", ";
 			$result .= "`firm_id` = '$firm'";
 		}
 		fwrite ( $this->log, "set=$result\n" );

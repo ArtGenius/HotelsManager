@@ -1,6 +1,5 @@
 <?php
 require_once 'control/HotelsControllers.php';
-require_once "header.php";
 ?>
 <!DOCTYPE  HTML>
 <html>
@@ -36,6 +35,7 @@ require_once "header.php";
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.php">Список гостиниц<span class="sr-only">(current)</span></a></li>
+        <li><a href="statistics.php">Статистика<span class="sr-only">(current)</span></a></li>
         <!-- <li><a href="#">Заказы</a></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
