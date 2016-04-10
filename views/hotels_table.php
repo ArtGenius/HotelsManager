@@ -111,7 +111,7 @@ $(document).ready(function() {
 <?php
 for ($i=0; $i < count($hotels); $i++) {
 	$q=new HotelController();
-	echo "<tr id='".$hotels[$i]['id']."'><td>".$hotels[$i]['id']."</td><td>".$hotels[$i]['name']."</td><td>".$hotels[$i]['address']."</td><td>".$hotels[$i]['rank']."</td><td><a href=firm.php?id=".$hotels[$i]['firm_id'].">".$q->getFirmNameById($hotels[$i]['firm_id'])."</td><td>
+	echo "<tr id='".$hotels[$i]['id']."'><td>".$hotels[$i]['id']."</td><td><a href=hotel.php?id=".$hotels[$i]['id'].">".$hotels[$i]['name']."</a></td><td>".$hotels[$i]['address']."</td><td>".$hotels[$i]['rank']."</td><td><a href=firm.php?id=".$hotels[$i]['firm_id'].">".$q->getFirmNameById($hotels[$i]['firm_id'])."</td><td>
                 <a href='../../Hotels/edit.php?id=".$hotels[$i]['id']."&table=hotel' id='edit' class='edit'><span class='glyphicon glyphicon-pencil' title='Редактировать'></span> изменить</a>
                 <a href='../../Hotels/delete.php?id=".$hotels[$i]['id']."&table=hotel' id='$hotels[$i]['id']' class='remove del'><span title='удалить' class='glyphicon glyphicon-remove'></span> удалить</a>
                 </td></tr>";
